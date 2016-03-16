@@ -1,0 +1,13 @@
+Q5:
+ 
+ String str1 = "abc";
+ String str2 = new String("abc");
+ String str3 = "abc";
+ 
+ JVM has string pools which helps increase performance and decrease memory overhead since string allocation is very costly 
+ in respect to both memory and time.Thus, in the code above, the str1 is created in JVM pooling string. On the other hand,
+ str2 is created as a new String object, outside of the string pool,use heap. For str3, JVM checks the pool for the string if it 
+ exists in the pool then it simply point the reference to this string, otherwise it creates new instance in the pool to 
+ reduce memory overhead and  maximize the performance. As it can be seen creating string within the pool is more efficient. 
+
+ 

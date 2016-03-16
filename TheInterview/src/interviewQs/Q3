@@ -1,0 +1,15 @@
+Q3:
+ 
+ The i++'s value in the first loop is incremented and return the original value, and the 
+ value of the ++i is incremented then return the incremented value. However, for below "for" loops
+ it doesn't matter since value of i's aren't assigned to a new value, and both of them produce same results. 
+ 
+ for (int i = 0; i <= 2; i++) {
+	System.out.println(i);
+ }
+ 
+ for (int i = 0; i <= 2; ++i) {
+	System.out.println(i);
+ }
+ 
+ 
