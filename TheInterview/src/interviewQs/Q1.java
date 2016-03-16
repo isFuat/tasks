@@ -146,7 +146,10 @@ public class Q1 {
 	}
 
 }
-
+/**
+ * Comparator compare the occurances of a's
+ *
+ */
 class Vcomparator implements Comparator<Object> {
 
 	Map<Integer, Integer> map;
