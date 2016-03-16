@@ -127,8 +127,7 @@ public class Q1 {
 		}
 
 		int index2 = 0;
-		for (@SuppressWarnings("unused")
-		String ls : list) {
+		for (String ls : list) {
 
 			out_string[index2] = list.get(index2);
 
