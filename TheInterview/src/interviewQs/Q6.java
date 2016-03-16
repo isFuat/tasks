@@ -5,33 +5,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Q6 
- * 25 mins completion time.
- * This program finds the most repeated value of an array.
+ * Q6 25 mins completion time.
+ * 
  * @author Fuat Arslan
  * 
  */
 public class Q6 {
-
-	/**
-	 * The Main Program.
-	 * @param args the args.
-	 */
-	public static void main(String[] args) {
-
-		String[] arr1 = { "apple", "pie", "apple", "red", "red", "red" };
-		most_repeated(arr1);
-		String[] arr2 = { "apple" };
-		most_repeated(arr2);
-		String[] arr3 = { "apple", "banana", "banana" };
-		most_repeated(arr3);
-		String[] arr4 = { "apple", "pie", "apple", "red", "red", "red", "blue",
-				"blue", "blue" };
-		most_repeated(arr4);
-		String[] arr5 = { "apple", "pie", "red", "blue" };
-		most_repeated(arr5);
-
-	}
 
 	/**
 	 * This method finds the most repeated value for given array input and

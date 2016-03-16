@@ -9,44 +9,13 @@ import java.util.Map;
 import java.util.TreeMap;
 
 /**
- * Q1.
- * 120 mins completion time.
+ * Q1. 120 mins completion time.
+ * 
  * @author Fuat Arslan
- * @version 4/4/2016
+ * 
  * 
  */
 public class Q1 {
-
-	/**
-	 * @param args
-	 *            the args.
-	 */
-	public static void main(String[] args) {
-
-		String[] in1_string = { "aaaasd", "a", "aab", "aaabcd", "ef",
-				"cssssssd", "fdz", "kf", "zc", "lklklklklklklklkl", "l" };
-		String[] in2_string = { "aaaasd", "a", "ab", "aab", "abc", "aaa",
-				"aaabcd", "ef", "cssssssd", "fdz", "kf", "zc",
-				"lklklklklklklklkl", "l" };
-		String[] in3_string = { "aaaasd", "a", "aab", "aaabcd" };
-		String[] in4_string = { "ef", "cssssssd", "fdz", "kf", "zc",
-				"lklklklklklklklkl", "l" };
-		List<String[]> ls = new ArrayList<String[]>();
-		ls.add(in1_string);
-		ls.add(in2_string);
-		ls.add(in3_string);
-		ls.add(in4_string);
-
-		int in_num = 1;
-		for (String[] arr : ls) {
-			System.out
-					.println("Input " + in_num + " : " + Arrays.toString(arr));
-			System.out.println("Output " + in_num + " : "
-					+ Arrays.toString(sortStringArrays(arr)) + "\n");
-			in_num++;
-		}
-
-	}
 
 	/**
 	 * Sorts a bunch of words by the number of character “a”s within the word
@@ -87,14 +56,18 @@ public class Q1 {
 
 		}
 
-		// Comparator is used to control decreasing order elements based on
-		// number of a's in map1.
+		/**
+		 * Comparator is used to control decreasing order elements based on
+		 * number of a's in map1.\
+		 */
 		Vcomparator comparator1 = new Vcomparator(map1);
 		Map<Integer, Integer> tMap1 = new TreeMap<Integer, Integer>(comparator1);
 		tMap1.putAll(map1);
 
-		// Comparator is used to control decreasing order of elements based on
-		// elements' length.
+		/**
+		 * Comparator is used to control decreasing order of elements based on
+		 * elements' length.
+		 */
 		Vcomparator comparator2 = new Vcomparator(map2);
 		Map<Integer, Integer> tMap2 = new TreeMap<Integer, Integer>(comparator2);
 		tMap2.putAll(map2);
@@ -154,7 +127,8 @@ public class Q1 {
 		}
 
 		int index2 = 0;
-		for (@SuppressWarnings("unused") String ls : list) {
+		for (@SuppressWarnings("unused")
+		String ls : list) {
 
 			out_string[index2] = list.get(index2);
 
