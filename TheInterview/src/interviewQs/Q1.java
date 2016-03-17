@@ -18,9 +18,9 @@ import java.util.TreeMap;
 public class Q1 {
 
 	/**
-	 * Sorts a bunch of words by the number of character “a”s within the word
+	 * Sorts a bunch of words by the number of character â€œaâ€s within the word
 	 * (decreasing order) if some words contain the same amount of character
-	 * “a”s then you need to sort those words by their lengths.
+	 * â€œaâ€s then  sorts those words by their lengths.
 	 * 
 	 * @param in_string
 	 *            the input string array.
